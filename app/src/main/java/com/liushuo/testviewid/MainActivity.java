@@ -1,20 +1,19 @@
 package com.liushuo.testviewid;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.TextView;
 
-import org.xmlpull.v1.XmlPullParser;
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        LayoutInflater.from(this);
+        LayoutInflater.from(this);
+        LayoutInflaterWrapper.from();
 
     }
 }
