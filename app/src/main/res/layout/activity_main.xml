@@ -7,7 +7,6 @@
     tools:context="com.liushuo.testviewid.MainActivity">
 
     <TextView
-        android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World text1!" />
@@ -22,7 +21,6 @@
         layout="@layout/item"></include>
 
     <include
-        android:id="@+id/item"
         layout="@layout/item"></include>
 
 </LinearLayout>
