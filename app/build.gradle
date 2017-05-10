@@ -39,8 +39,6 @@ android {
         abortOnError true
 //        // true--只报告error
         ignoreWarnings true
-//        // true--忽略有错误的文件的全/绝对路径(默认是true)
-//        //absolutePaths true
 //        // true--检查所有问题点，包含其他默认关闭项
 //        checkAllWarnings true
 //        // true--所有warning当做error
@@ -56,7 +54,9 @@ android {
 //        // true--显示错误的所有发生位置，不截取
         showAll true
 //        // 回退lint设置(默认规则)
-//        lintConfig file("default-lint.xml")
+        // true--忽略有错误的文件的全/绝对路径(默认是true)
+        absolutePaths false
+        lintConfig file("lint.xml")
 //        // true--生成txt格式报告(默认false)
 //        textReport true
 //        // 重定向输出；可以是文件或'stdout'
@@ -88,4 +88,5 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.1'
     compile(name: 'aarWrapper-release', ext: 'aar')
+    compile project(':testlib')
 }
