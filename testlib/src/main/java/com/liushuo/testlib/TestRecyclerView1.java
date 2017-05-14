@@ -12,4 +12,5 @@ public class TestRecyclerView1 extends RecyclerView {
     public TestRecyclerView1(Context context) {
         super(context);
     }
+
 }
